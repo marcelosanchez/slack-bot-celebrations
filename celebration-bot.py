@@ -10,7 +10,7 @@ channel = os.environ['BOT_CHANNEL']
 
 async def celebration_alerts():
     slack = Slack()
-    TIEMPO_ESPERA = 3600  # segundos
+    TIEMPO_ESPERA = 90000  # segundos
     while True:
         bday_member = Member.validate_birthdays()
         print("[" + str(datetime.now()) + "] ** Buscando homenajeados")

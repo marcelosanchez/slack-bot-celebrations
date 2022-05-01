@@ -88,6 +88,6 @@ class Member:
     def get_today_display(cls):
         today = date.today()
         date_time_obj = datetime.strptime(str(today), '%Y-%m-%d')
-        date_time_obj = date_time_obj - timedelta(hours=5)  # Para convertirlo al GMT-05
+        date_time_obj = date_time_obj  # Para convertirlo al GMT-05
         date_str = date_time_obj.strftime("%d %b")
         return date_str
